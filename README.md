@@ -3,18 +3,18 @@
 Menu-driven `tc/netem` controller for inline L2 bridges (Raspberry Pi friendly).
 
 Menu map
-•	1–10: Preset profiles (1–9) and 10 = Custom NETEM (with validation)
-•	11: Dry-run mode toggle (no changes applied; commands are printed)
-•	12: Offload toggler (TSO/GSO/GRO on/off for eth1/eth2)
-•	13: Show counters (Δ since last apply/reset)
-•	14: Show rich status (qdiscs, DSCP filters if present)
-•	15: Reset ALL (clears both NICs; and IFB if enabled)
-•	16: Show counters (absolute + Δ)
-•	17: Scenarios (timed sequences, including app-aware DSCP sets)
-•	18: Ingress (IFB) apply … (visible only if USE_IFB=1)
-•	19: DSCP-targeted impairment (ON/OFF + decoded summary)
-•	20: TTL watchdog / “until HH:MM” auto-clear
-•	0: Exit
+1–10: Preset profiles (1–9) and 10 = Custom NETEM (with validation)
+11: Dry-run mode toggle (no changes applied; commands are printed)
+12: Offload toggler (TSO/GSO/GRO on/off for eth1/eth2)
+13: Show counters (Δ since last apply/reset)
+14: Show rich status (qdiscs, DSCP filters if present)
+15: Reset ALL (clears both NICs; and IFB if enabled)
+16: Show counters (absolute + Δ)
+17: Scenarios (timed sequences, including app-aware DSCP sets)
+18: Ingress (IFB) apply … (visible only if USE_IFB=1)
+19: DSCP-targeted impairment (ON/OFF + decoded summary)
+20: TTL watchdog / “until HH:MM” auto-clear
+0: Exit
 
 Per-profile workflow (1–10)
 1.	Select a profile.
