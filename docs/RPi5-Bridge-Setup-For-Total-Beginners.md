@@ -37,6 +37,7 @@ sudo nano /etc/udev/rules.d/70-persistent-net.rules
 ```text
 SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="aa:bb:cc:dd:ee:01", NAME="eth1"
 SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="aa:bb:cc:dd:ee:02", NAME="eth2"
+
 # Replace "aa:bb:cc:dd:ee:01" "aa:bb:cc:dd:ee:02" with your own MACs
 ```
 
@@ -77,10 +78,9 @@ sudo nmcli con add type ethernet ifname eth0 con-name eth0 \
   ipv4.addresses 192.168.0.162/24 ipv4.gateway 192.168.0.1 \
   ipv4.dns "1.1.1.1 8.8.8.8" ipv4.method manual ipv6.method ignore
 sudo nmcli con up eth0
+
+# Substitute the placeholder IP address with the required host address and specify the correct default gateway for the network.
 ```
-
-# Replace IP with your desired IP with the actual gateway as appropriate.
-
 ---
 
 ## 4) Build the inline L2 bridge (no IP on `br0`)
