@@ -37,6 +37,7 @@ sudo nano /etc/udev/rules.d/70-persistent-net.rules
 ```text
 SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="aa:bb:cc:dd:ee:01", NAME="eth1"
 SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="aa:bb:cc:dd:ee:02", NAME="eth2"
+# Replace "aa:bb:cc:dd:ee:01" "aa:bb:cc:dd:ee:02" with your own MACs
 ```
 
 **Apply (simple path = reboot):**
@@ -78,7 +79,7 @@ sudo nmcli con add type ethernet ifname eth0 con-name eth0 \
 sudo nmcli con up eth0
 ```
 
-> Replace `192.168.0.1` with the actual gateway as appropriate.
+# Replace IP with your desired IP with the actual gateway as appropriate.
 
 ---
 
