@@ -1,5 +1,6 @@
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2025 Jose Carvalho
+# Project: https://github.com/zearthlink/tc-menu
 
 #!/usr/bin/env bash
 # tc-menu v2.4
